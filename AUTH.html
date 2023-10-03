@@ -107,6 +107,36 @@
         signUpButton.addEventListener('click', userSignUp);
         signInButton.addEventListener('click', userSignIn);
         signOutButton.addEventListener('click', userSignOut);
-      </script>
+
+        <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyArwNOLNUH_psCqO3MibrusSKsUGXcYLwA",
+    authDomain: "profileapp-42e3d.firebaseapp.com",
+    databaseURL: "https://profileapp-42e3d-default-rtdb.firebaseio.com",
+    projectId: "profileapp-42e3d",
+    storageBucket: "profileapp-42e3d.appspot.com",
+    messagingSenderId: "989127076238",
+    appId: "1:989127076238:web:0022fdcd5a4b280b5d1cdf",
+    measurementId: "G-6KF3Q56SEZ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  import {getDatabase, set, get, update, remove, ref, child};
+  from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"
+      
+</script>
+
+        
 </body>
 </html>
